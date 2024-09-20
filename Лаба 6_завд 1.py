@@ -5,7 +5,7 @@ def add_paired():
     B = []
 
     for i in range(len(A)):
-        if i % 2 != 0 :
+        if i % 2 == 0 :
             B.append(A[i])
     print(B)
 
