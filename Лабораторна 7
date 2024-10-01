@@ -17,6 +17,12 @@ def printf(students):
 
 def add(students):
   key = input("Введіть ім'я та прізвище учня, якого хочете додати: ")
+  if key in students:
+        print("Учень з таким ім'ям та призвіщем вже існує.")
+        choise = input("Чи бажаєте ви оновити дані про учня? (Так/Ні)")
+        if choise != "Так":
+            print("Додавання відмінено.")
+            return
   grades = []
   for i in range(1, 11):
       while True:
